@@ -1,4 +1,4 @@
-name: Release_tags
+name: Release_Tags
 on:
   push:
     tags:
@@ -8,5 +8,3 @@ jobs:
     runs-on: self-hosted
     steps:
       - run: env
-
-
