@@ -1,11 +1,12 @@
-name: Developer_Branch_CI
+name: Release_tags
 on:
   push:
-    branches:
-      - 'XPNS-*'
+    tags:
+      - "v*"
 jobs:
   check-bats-version:
     runs-on: self-hosted
     steps:
       - run: env
-      
+
+

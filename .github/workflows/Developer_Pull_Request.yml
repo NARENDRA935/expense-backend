@@ -1,6 +1,6 @@
-name: Developer_Branch_CI
+name: Developer_Pull_Request
 on:
-  push:
+  pull_request:
     branches:
       - 'XPNS-*'
 jobs:
@@ -8,4 +8,6 @@ jobs:
     runs-on: self-hosted
     steps:
       - run: env
+
+      #
       
